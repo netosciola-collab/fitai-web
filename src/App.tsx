@@ -13,6 +13,7 @@ import { ProgressPage } from '@/pages/ProgressPage';
 import { NutritionPage } from '@/pages/NutritionPage';
 import { CoachPage } from '@/pages/CoachPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
+import { RegisterPage } from '@/pages/RegisterPage';
 
 function App() {
   const { setInitialized, initialized } = useAuthStore();
@@ -64,8 +65,8 @@ function App() {
 
         {/* Placeholder Routes (to be implemented) */}
         <Route path="/demo" element={<LandingPage />} />
-        <Route path="/signup" element={<LoginPage />} />
-        <Route path="/register" element={<LoginPage />} />
+        <Route path="/signup" element={<RegisterPage />} />
+       <Route path="/register" element={<RegisterPage />} />
         <Route path="/onboarding" element={
           <ProtectedRoute>
             <OnboardingPage />
