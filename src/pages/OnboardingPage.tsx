@@ -140,6 +140,7 @@ export function OnboardingPage() {
       setErrors({ submit: 'Erro ao gerar plano. Tente novamente.' });
     } finally {
       setIsLoading(false);
+      navigate('/dashboard');
     }
   };
 
